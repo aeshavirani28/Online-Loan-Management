@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign Up</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-photo/front-view-finance-business-elements-assortment_23-2148793759.jpg?w=740&t=st=1677137459~exp=1677138059~hmac=0c6d504cc187f06318d5550821ae9266055868b9daa261de99edb655156aaf46");
+            background-color: rgba(0, 0, 0, 0.5);
+            background-size: 100%;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0.001px;
+            margin-top: 10%;
+            color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f5f5;
+            border-radius: 10%;
+            padding: 20px;
+        }
+
+        input[type="textbox"],
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            padding: 10px;
+            border-radius: 3px;
+            border: solid rgba(155, 150, 150, 0.5);
+            border-width: 1px;
+            margin-bottom: 10px;
+            width: 100%;
+            font-size: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0069d9;
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Sign Up</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <form name="Form2" action="usersignup.php" method="get">
+                            <table class="table-borderless">
+                                <tr>
+                                    <td>First Name</td>
+                                    <td><input type="text" name="fname" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Last Name</td>
+                                    <td><input type="text" name="lname" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td><input type="text" name="address" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td><input type="date" name="dob" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>
+                                        <select name="gender" required>
+                                            <option value="">Select</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Age</td>
+                                    <td><input type="number" name="age" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Contact</td>
+                                    <td><input type="text" name="contact" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input type="email" name="email" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Username</td>
+                                    <td><input type="text" name="username" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td><input type="password" name="password" required></td>
+                                </tr>
+                            </table>
+                            <input type="submit" value="Sign Up" class="btn btn-primary" name="submit">
+                        </form>
+                        <a href="user_login.php">Already a member? Log in here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
